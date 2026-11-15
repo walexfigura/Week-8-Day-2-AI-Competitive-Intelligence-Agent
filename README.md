@@ -228,7 +228,7 @@ Responses API with function calling.
 python run.py demo
 ```
 
-You'll watch the agent work, one tool call per line, for example:
+You'll watch the agent work, one tool call per line. Illustrative example of the format:
 
 ```
    1. read_business_document({"document_id": "competitive-priorities"})
@@ -487,7 +487,7 @@ Mock mode is the default and needs no accounts or websites. To experiment with r
 ## Testing and reliability
 
 ```bash
-pytest                                   # 103 unit tests, no API key
+pytest                                   # 104 unit tests, no API key
 python run.py eval --deterministic-only  # 12 deterministic evaluation cases
 python run.py eval                       # + agent evaluations (needs OPENAI_API_KEY)
 python run.py eval --case small_sample --repeat 3   # repeat a nondeterministic case
