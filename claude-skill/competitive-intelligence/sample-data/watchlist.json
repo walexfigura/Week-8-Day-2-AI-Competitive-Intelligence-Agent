@@ -1,0 +1,119 @@
+{
+  "_meta": {
+    "notice": "FICTIONAL DATA for the Northstar Supply teaching project. PeakTrail, SipWorks, and TrailForge are invented brands; their URLs use the reserved .example domain.",
+    "owner": "Northstar Supply competitive intelligence (fictional)",
+    "updated_at": "2026-11-10",
+    "how_to_use": "Each tracked variant lists the Northstar product it competes with and how directly comparable it is. The scan and the agent use this mapping to judge business relevance."
+  },
+  "competitors": [
+    {
+      "competitor_id": "peaktrail",
+      "name": "PeakTrail",
+      "segment": "Insulated bottles and outdoor drinkware",
+      "watch_priority": "high",
+      "profile": "competitors/profiles/peaktrail.md",
+      "products": [
+        {
+          "product_id": "PT-RIDGE",
+          "name": "PeakTrail Ridge Insulated Bottle",
+          "url": "https://peaktrail.example/products/ridge-insulated-bottle",
+          "review_dataset": "peaktrail-ridge-reviews",
+          "tracked_variants": [
+            {
+              "variant_id": "PT-RIDGE-32",
+              "size_oz": 32,
+              "northstar_product_id": "NS-SUMMIT-32",
+              "comparability": "direct",
+              "notes": "Same size and use case (32 oz insulated bottle, screw lid). Most direct competitor to Summit."
+            },
+            {
+              "variant_id": "PT-RIDGE-24",
+              "size_oz": 24,
+              "northstar_product_id": "NS-TRAILHEAD-24",
+              "comparability": "direct",
+              "notes": "Same size class as Trailhead 24 oz."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "sipworks",
+      "name": "SipWorks",
+      "segment": "Everyday commuter drinkware",
+      "watch_priority": "medium",
+      "profile": "competitors/profiles/sipworks.md",
+      "products": [
+        {
+          "product_id": "SW-METRO",
+          "name": "SipWorks Metro Commuter Tumbler",
+          "url": "https://sipworks.example/shop/metro-commuter-tumbler",
+          "review_dataset": "sipworks-metro-reviews",
+          "tracked_variants": [
+            {
+              "variant_id": "SW-METRO-20",
+              "size_oz": 20,
+              "northstar_product_id": "NS-COMMUTE-20",
+              "comparability": "direct",
+              "notes": "Same size and commuter use case."
+            }
+          ]
+        },
+        {
+          "product_id": "SW-DAILY",
+          "name": "SipWorks Daily Bottle",
+          "url": "https://sipworks.example/shop/daily-bottle",
+          "review_dataset": null,
+          "tracked_variants": [
+            {
+              "variant_id": "SW-DAILY-24",
+              "size_oz": 24,
+              "northstar_product_id": "NS-TRAILHEAD-24",
+              "comparability": "partial",
+              "notes": "Same size, but a lower-priced basic bottle with no verified leak-proof lid claim."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "trailforge",
+      "name": "TrailForge",
+      "segment": "Premium outdoor hydration products",
+      "watch_priority": "medium",
+      "profile": "competitors/profiles/trailforge.md",
+      "products": [
+        {
+          "product_id": "TF-APEX",
+          "name": "TrailForge Apex Expedition Bottle",
+          "url": "https://trailforge.example/gear/apex-expedition-bottle",
+          "review_dataset": "trailforge-apex-reviews",
+          "tracked_variants": [
+            {
+              "variant_id": "TF-APEX-40",
+              "size_oz": 40,
+              "northstar_product_id": null,
+              "comparability": "none",
+              "notes": "Northstar has no 40 oz bottle. Watched for positioning changes, not price matching."
+            }
+          ]
+        },
+        {
+          "product_id": "TF-CANTEEN",
+          "name": "TrailForge Canteen Bottle",
+          "url": "https://trailforge.example/gear/canteen-bottle",
+          "review_dataset": null,
+          "tracked_variants": [
+            {
+              "variant_id": "TF-CANTEEN-32",
+              "size_oz": 32,
+              "northstar_product_id": "NS-SUMMIT-32",
+              "comparability": "partial",
+              "notes": "Same size, but a premium-priced product ($45) with a different lid style."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

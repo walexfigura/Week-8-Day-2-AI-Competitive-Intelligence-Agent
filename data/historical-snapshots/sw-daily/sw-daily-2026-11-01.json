@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "fictional": true,
+  "snapshot_id": "sw-daily-2026-11-01",
+  "source_id": "src-sw-daily-2026-11-01",
+  "competitor_id": "sipworks",
+  "product_id": "SW-DAILY",
+  "product_name": "SipWorks Daily Bottle",
+  "variant_id": "SW-DAILY-24",
+  "variant_label": "24 oz",
+  "size_oz": 24,
+  "storefront": "US",
+  "observed_at": "2026-11-01T15:20:00Z",
+  "current_price": 28.0,
+  "list_price": null,
+  "currency": "USD",
+  "promotion": null,
+  "availability": "in_stock",
+  "features": [
+    "Double-wall insulation",
+    "Keeps drinks cold for 18 hours",
+    "Wide-mouth opening",
+    "Fits most cup holders"
+  ],
+  "headline": "The everyday bottle.",
+  "marketing_copy": "A simple, sturdy bottle for the gym, the office, and everything between.",
+  "hidden_text": null,
+  "source_url": "https://sipworks.example/shop/daily-bottle",
+  "capture_method": "mock_fixture",
+  "fixture": "data/product-pages/sipworks/sw-daily-2026-11-01.html",
+  "page_hash": "sha256:5ec1e8756dd0b4d6",
+  "notes": "No promotion shown. Price matches the earlier strikethrough regular price."
+}

@@ -1,0 +1,1000 @@
+{
+  "title": "Northstar Supply Competitive Intelligence Brief (offline, rule-based)",
+  "notice": "All companies, products, prices, and reviews in this report are FICTIONAL sample data from the Northstar Supply teaching project (10 Weeks to AI Agents). This is not real market research.",
+  "generated_at": "2026-11-15T18:37:58+00:00",
+  "run": {
+    "producer": "Deterministic offline briefing (no LLM). Rule-based templates over the same tools; priorities are the rubric baseline without analyst judgment; review aspects use hand-labeled reference annotations.",
+    "model": null,
+    "trace_id": "ci-20261115-1c7b9b",
+    "scenario_id": "offline_briefing",
+    "data_mode": "mock (fictional fixtures)"
+  },
+  "executive_summary": "Top signal (high): PeakTrail Ridge Insulated Bottle (32 oz): price decrease — Listed price decrease of 17.9% ($39.00 USD → $32.00 USD). Signals by rubric baseline: 2 high, 1 medium, 1 low. Customer sentiment: 8 of the 20 reviews in our sample mention problems with lid leakage. 2 changes did not warrant an alert, and 3 items need verification. This is a rule-based offline briefing; run the LLM agent for interpretation of messaging and context.",
+  "signals": [
+    {
+      "title": "PeakTrail Ridge Insulated Bottle (32 oz): price decrease",
+      "priority": "high",
+      "competitor_id": "peaktrail",
+      "product_id": "PT-RIDGE",
+      "variant_id": "PT-RIDGE-32",
+      "change_type": "price_decrease",
+      "event_ids": [
+        "evt-5fc825c914"
+      ],
+      "what_changed": "Listed price decrease of 17.9% ($39.00 USD → $32.00 USD). price decrease (current_price)",
+      "previous_observation": "$39.00 USD, in_stock, headline 'Cold for 24 hours. Built for the trail.' on 2026-10-01T15:00:00Z (pt-ridge-2026-10-01).",
+      "new_observation": "$32.00 USD, in_stock, headline 'Cold for 24 hours. Built for the trail.' on 2026-11-01T15:00:00Z (pt-ridge-2026-11-01).",
+      "why_it_matters": "Watchlist mapping: direct comparable to Northstar Summit Insulated Bottle 32 oz ($39.00 USD). Directly comparable to NS-SUMMIT-32. Price changed by 17.9% (computed in Python).",
+      "evidence_ids": [
+        "pt-ridge-2026-10-01",
+        "pt-ridge-2026-11-01",
+        "src-pt-ridge-2026-10-01",
+        "src-pt-ridge-2026-11-01"
+      ],
+      "confidence": "medium",
+      "uncertainty": "The new page shows no promotion label, strikethrough price, or end date. Two observations cannot show whether this price is temporary or permanent.",
+      "priority_rationale": "Rubric baseline (no analyst judgment applied): business relevance high; magnitude high; evidence quality medium; customer impact unknown; urgency high; confidence high.",
+      "recommended_next_step": "Head of Ecommerce: review Northstar Summit Insulated Bottle 32 oz pricing against this listing. Before acting, capture at least two more observations of the same variant to see whether the price holds or a promotion label appears.",
+      "computed_facts": [
+        {
+          "event_id": "evt-5fc825c914",
+          "change_type": "price_decrease",
+          "field": "current_price",
+          "old_value": 39.0,
+          "new_value": 32.0,
+          "magnitude": {
+            "old_price": 39.0,
+            "new_price": 32.0,
+            "abs_change": -7.0,
+            "pct_change": -17.95,
+            "pct_display": "17.9%",
+            "direction": "decrease",
+            "formula": "(39 - 32) / 39 * 100"
+          },
+          "caveats": [
+            "The new page shows no promotion label, strikethrough price, or end date. Two observations cannot show whether this price is temporary or permanent."
+          ],
+          "snapshots": [
+            "pt-ridge-2026-10-01",
+            "pt-ridge-2026-11-01"
+          ],
+          "rubric_baseline": "high"
+        }
+      ]
+    },
+    {
+      "title": "SipWorks Metro Commuter Tumbler (20 oz): feature added, feature removed, messaging change",
+      "priority": "high",
+      "competitor_id": "sipworks",
+      "product_id": "SW-METRO",
+      "variant_id": "SW-METRO-20",
+      "change_type": "feature_added",
+      "event_ids": [
+        "evt-c6a1d56218",
+        "evt-56e6665f2b",
+        "evt-4da9f5b2ca",
+        "evt-f3874e451a"
+      ],
+      "what_changed": "feature added (features: 'LockSeal leak-proof lid'); feature removed (features: 'Splash-resistant slider lid'); messaging change (headline: Your commute, upgraded. → Now leak-proof. Toss it in your bag.); messaging change (marketing_copy: A slim tumbler that slides into any cup holder and keeps you → The Metro now ships with our new LockSeal lid, so you can th)",
+      "previous_observation": "$27.00 USD, in_stock, headline 'Your commute, upgraded.' on 2026-10-01T15:10:00Z (sw-metro-2026-10-01).",
+      "new_observation": "$27.00 USD, in_stock, headline 'Now leak-proof. Toss it in your bag.' on 2026-11-01T15:10:00Z (sw-metro-2026-11-01).",
+      "why_it_matters": "Watchlist mapping: direct comparable to Northstar Commute Tumbler 20 oz ($29.00 USD). Directly comparable to NS-COMMUTE-20. Feature relates to a Northstar differentiator (leak resistance/insulation/warranty).",
+      "evidence_ids": [
+        "sw-metro-2026-10-01",
+        "sw-metro-2026-11-01",
+        "src-sw-metro-2026-10-01",
+        "src-sw-metro-2026-11-01"
+      ],
+      "confidence": "high",
+      "uncertainty": "Feature text comes from the competitor's page; it is a claim, not a verified test result. Interpreting what a messaging change means is a judgment call, not a measured fact.",
+      "priority_rationale": "Rubric baseline (no analyst judgment applied): business relevance high; magnitude high; evidence quality high; customer impact unknown; urgency medium; confidence high.",
+      "recommended_next_step": "Product team: investigate the new competing feature and how it compares with Northstar Commute Tumbler 20 oz's documented limitations.",
+      "computed_facts": [
+        {
+          "event_id": "evt-c6a1d56218",
+          "change_type": "feature_added",
+          "field": "features",
+          "old_value": null,
+          "new_value": "LockSeal leak-proof lid",
+          "magnitude": null,
+          "caveats": [
+            "Feature text comes from the competitor's page; it is a claim, not a verified test result."
+          ],
+          "snapshots": [
+            "sw-metro-2026-10-01",
+            "sw-metro-2026-11-01"
+          ],
+          "rubric_baseline": "high"
+        },
+        {
+          "event_id": "evt-56e6665f2b",
+          "change_type": "feature_removed",
+          "field": "features",
+          "old_value": "Splash-resistant slider lid",
+          "new_value": null,
+          "magnitude": null,
+          "caveats": [],
+          "snapshots": [
+            "sw-metro-2026-10-01",
+            "sw-metro-2026-11-01"
+          ],
+          "rubric_baseline": "medium"
+        },
+        {
+          "event_id": "evt-4da9f5b2ca",
+          "change_type": "messaging_change",
+          "field": "headline",
+          "old_value": "Your commute, upgraded.",
+          "new_value": "Now leak-proof. Toss it in your bag.",
+          "magnitude": null,
+          "caveats": [
+            "Interpreting what a messaging change means is a judgment call, not a measured fact."
+          ],
+          "snapshots": [
+            "sw-metro-2026-10-01",
+            "sw-metro-2026-11-01"
+          ],
+          "rubric_baseline": "medium"
+        },
+        {
+          "event_id": "evt-f3874e451a",
+          "change_type": "messaging_change",
+          "field": "marketing_copy",
+          "old_value": "A slim tumbler that slides into any cup holder and keeps your morning coffee hot until you get to your desk.",
+          "new_value": "The Metro now ships with our new LockSeal lid, so you can throw it in a backpack or tote without worrying about spills. Same slim fit for any cup holder.",
+          "magnitude": null,
+          "caveats": [
+            "Interpreting what a messaging change means is a judgment call, not a measured fact."
+          ],
+          "snapshots": [
+            "sw-metro-2026-10-01",
+            "sw-metro-2026-11-01"
+          ],
+          "rubric_baseline": "medium"
+        }
+      ]
+    },
+    {
+      "title": "TrailForge Canteen Bottle (32 oz): availability change",
+      "priority": "medium",
+      "competitor_id": "trailforge",
+      "product_id": "TF-CANTEEN",
+      "variant_id": "TF-CANTEEN-32",
+      "change_type": "availability_change",
+      "event_ids": [
+        "evt-3d12542594"
+      ],
+      "what_changed": "availability change (availability)",
+      "previous_observation": "$45.00 USD, in_stock, headline 'The classic, rebuilt.' on 2026-10-01T15:40:00Z (tf-canteen-2026-10-01).",
+      "new_observation": "$45.00 USD, out_of_stock, headline 'The classic, rebuilt.' on 2026-11-01T15:40:00Z (tf-canteen-2026-11-01).",
+      "why_it_matters": "Watchlist mapping: partial comparable to Northstar Summit Insulated Bottle 32 oz ($39.00 USD). Partially comparable to NS-SUMMIT-32. Availability changed from in_stock to out_of_stock.",
+      "evidence_ids": [
+        "tf-canteen-2026-10-01",
+        "tf-canteen-2026-11-01",
+        "src-tf-canteen-2026-10-01",
+        "src-tf-canteen-2026-11-01"
+      ],
+      "confidence": "medium",
+      "uncertainty": "A single observation cannot show how long the product will be unavailable.",
+      "priority_rationale": "Rubric baseline (no analyst judgment applied): business relevance medium; magnitude medium; evidence quality medium; customer impact unknown; urgency medium; confidence high.",
+      "recommended_next_step": "Re-check availability next week; if it stays unavailable, Marketing may review whether Northstar Summit Insulated Bottle 32 oz messaging reaches customers searching for this product.",
+      "computed_facts": [
+        {
+          "event_id": "evt-3d12542594",
+          "change_type": "availability_change",
+          "field": "availability",
+          "old_value": "in_stock",
+          "new_value": "out_of_stock",
+          "magnitude": null,
+          "caveats": [
+            "A single observation cannot show how long the product will be unavailable."
+          ],
+          "snapshots": [
+            "tf-canteen-2026-10-01",
+            "tf-canteen-2026-11-01"
+          ],
+          "rubric_baseline": "medium"
+        }
+      ]
+    },
+    {
+      "title": "TrailForge Apex Expedition Bottle (40 oz): messaging change",
+      "priority": "low",
+      "competitor_id": "trailforge",
+      "product_id": "TF-APEX",
+      "variant_id": "TF-APEX-40",
+      "change_type": "messaging_change",
+      "event_ids": [
+        "evt-44b94e9e4d",
+        "evt-3d065f6ae0"
+      ],
+      "what_changed": "messaging change (headline: Engineered for the backcountry. → From trailhead to train platform: one bottle for every day.); messaging change (marketing_copy: Built for multi-day expeditions, alpine starts, and river tr → Expedition-grade insulation, now for your everyday routine. )",
+      "previous_observation": "$54.00 USD, in_stock, headline 'Engineered for the backcountry.' on 2026-10-01T15:30:00Z (tf-apex-2026-10-01).",
+      "new_observation": "$54.00 USD, in_stock, headline 'From trailhead to train platform: one bottle for every day.' on 2026-11-01T15:30:00Z (tf-apex-2026-11-01).",
+      "why_it_matters": "Watchlist mapping: none comparable to no directly comparable Northstar product. No directly comparable Northstar product. Headline or marketing copy changed. The rubric cannot judge whether it targets Northstar's customer segments; the analyst must interpret the old and new text.",
+      "evidence_ids": [
+        "tf-apex-2026-10-01",
+        "tf-apex-2026-11-01",
+        "src-tf-apex-2026-10-01",
+        "src-tf-apex-2026-11-01"
+      ],
+      "confidence": "medium",
+      "uncertainty": "Interpreting what a messaging change means is a judgment call, not a measured fact.",
+      "priority_rationale": "Rubric baseline (no analyst judgment applied): business relevance low; magnitude medium; evidence quality high; customer impact unknown; urgency medium; confidence medium.",
+      "recommended_next_step": "Marketing Lead: read the old and new copy and decide whether it targets Northstar's customer segments.",
+      "computed_facts": [
+        {
+          "event_id": "evt-44b94e9e4d",
+          "change_type": "messaging_change",
+          "field": "headline",
+          "old_value": "Engineered for the backcountry.",
+          "new_value": "From trailhead to train platform: one bottle for every day.",
+          "magnitude": null,
+          "caveats": [
+            "Interpreting what a messaging change means is a judgment call, not a measured fact."
+          ],
+          "snapshots": [
+            "tf-apex-2026-10-01",
+            "tf-apex-2026-11-01"
+          ],
+          "rubric_baseline": "low"
+        },
+        {
+          "event_id": "evt-3d065f6ae0",
+          "change_type": "messaging_change",
+          "field": "marketing_copy",
+          "old_value": "Built for multi-day expeditions, alpine starts, and river trips. The Apex is the last bottle you will pack.",
+          "new_value": "Expedition-grade insulation, now for your everyday routine. Take the Apex from your morning commute to the weekend summit.",
+          "magnitude": null,
+          "caveats": [
+            "Interpreting what a messaging change means is a judgment call, not a measured fact."
+          ],
+          "snapshots": [
+            "tf-apex-2026-10-01",
+            "tf-apex-2026-11-01"
+          ],
+          "rubric_baseline": "low"
+        }
+      ]
+    }
+  ],
+  "sentiment_findings": [
+    {
+      "product_id": "PT-RIDGE",
+      "aspect": "lid_leak_resistance",
+      "sentiment": "negative",
+      "interpretation": "Recurring product quality theme in this sample. Relates to a verified Northstar feature: Northstar Trailhead Insulated Bottle 24 oz (Northstar QA report QA-2025-031 (internal, fictional)); Northstar Summit Insulated Bottle 32 oz (Northstar QA report QA-2026-014 (internal, fictional), 2026-06-12). Check whether our product page communicates it; do not make comparative claims without testing the competitor product.",
+      "review_ids": [
+        "PT-R01",
+        "PT-R04",
+        "PT-R06",
+        "PT-R08",
+        "PT-R11",
+        "PT-R13",
+        "PT-R16",
+        "PT-R19"
+      ],
+      "review_count": 8,
+      "sample_size": 20,
+      "statement": "8 of the 20 reviews in our sample mention problems with lid leakage.",
+      "recurring": true,
+      "category": "product_quality"
+    },
+    {
+      "product_id": "PT-RIDGE",
+      "aspect": "insulation",
+      "sentiment": "positive",
+      "interpretation": "Recurring product quality theme in this sample.",
+      "review_ids": [
+        "PT-R01",
+        "PT-R02",
+        "PT-R06",
+        "PT-R08",
+        "PT-R12",
+        "PT-R13",
+        "PT-R17"
+      ],
+      "review_count": 7,
+      "sample_size": 20,
+      "statement": "7 of the 20 reviews in our sample mention good insulation (drinks staying cold or hot).",
+      "recurring": true,
+      "category": "product_quality"
+    },
+    {
+      "product_id": "PT-RIDGE",
+      "aspect": "design",
+      "sentiment": "positive",
+      "interpretation": "Recurring product quality theme in this sample.",
+      "review_ids": [
+        "PT-R05",
+        "PT-R06",
+        "PT-R20"
+      ],
+      "review_count": 3,
+      "sample_size": 20,
+      "statement": "3 of the 20 reviews in our sample mention liking the design.",
+      "recurring": true,
+      "category": "product_quality"
+    },
+    {
+      "product_id": "PT-RIDGE",
+      "aspect": "value",
+      "sentiment": "positive",
+      "interpretation": "Recurring product quality theme in this sample.",
+      "review_ids": [
+        "PT-R03",
+        "PT-R13",
+        "PT-R17"
+      ],
+      "review_count": 3,
+      "sample_size": 20,
+      "statement": "3 of the 20 reviews in our sample mention good value or price.",
+      "recurring": true,
+      "category": "product_quality"
+    },
+    {
+      "product_id": "SW-METRO",
+      "aspect": "lid_leak_resistance",
+      "sentiment": "positive",
+      "interpretation": "Recurring product quality theme in this sample. Customers praise a lid capability our comparable product does not have (see its documented limitations).",
+      "review_ids": [
+        "SW-R06",
+        "SW-R07",
+        "SW-R09",
+        "SW-R13",
+        "SW-R15"
+      ],
+      "review_count": 5,
+      "sample_size": 14,
+      "statement": "5 of the 14 reviews in our sample mention the lid not leaking.",
+      "recurring": true,
+      "category": "product_quality"
+    },
+    {
+      "product_id": "TF-APEX",
+      "aspect": "insulation",
+      "sentiment": "positive",
+      "interpretation": "Recurring product quality theme in this sample.",
+      "review_ids": [
+        "TF-R01",
+        "TF-R06",
+        "TF-R10"
+      ],
+      "review_count": 3,
+      "sample_size": 15,
+      "statement": "3 of the 15 reviews in our sample mention good insulation (drinks staying cold or hot).",
+      "recurring": true,
+      "category": "product_quality"
+    }
+  ],
+  "review_samples": {
+    "PT-RIDGE": {
+      "records_received": 21,
+      "unique_reviews": 20,
+      "duplicates_excluded": [
+        {
+          "review_id": "PT-R21",
+          "duplicate_of": "PT-R04",
+          "kind": "exact_duplicate"
+        }
+      ],
+      "collection": "mock_fixture",
+      "description": "The 20 most recent reviews visible on the fictional PT-RIDGE product page on 2026-11-10, plus one record syndicated from a fictional retail partner that duplicates PT-R04 (21 records, 20 unique). This is a convenience sample, not a random sample of customers.",
+      "date_range": [
+        "2026-10-03",
+        "2026-11-08"
+      ],
+      "caveat": "Convenience sample of visible reviews. Counts describe this sample only, not all customers.",
+      "annotation_source": "reference_annotations (hand-labeled by the course author)",
+      "ambiguous_review_ids": [
+        "PT-R10",
+        "PT-R18"
+      ],
+      "possible_prompt_injection_review_ids": []
+    },
+    "SW-METRO": {
+      "records_received": 15,
+      "unique_reviews": 14,
+      "duplicates_excluded": [
+        {
+          "review_id": "SW-R08",
+          "duplicate_of": "SW-R07",
+          "kind": "near_duplicate"
+        }
+      ],
+      "collection": "mock_fixture",
+      "description": "The 15 most recent reviews visible on the fictional SW-METRO product page on 2026-11-10. One record (SW-R08) is a near-duplicate re-post of SW-R07 by the same reviewer. Reviews before 2026-10-20 describe the old slider lid; later ones may describe the LockSeal lid. Convenience sample.",
+      "date_range": [
+        "2026-10-02",
+        "2026-11-09"
+      ],
+      "caveat": "Convenience sample of visible reviews. Counts describe this sample only, not all customers.",
+      "annotation_source": "reference_annotations (hand-labeled by the course author)",
+      "ambiguous_review_ids": [
+        "SW-R14"
+      ],
+      "possible_prompt_injection_review_ids": [
+        "SW-R12"
+      ]
+    },
+    "TF-APEX": {
+      "records_received": 15,
+      "unique_reviews": 15,
+      "duplicates_excluded": [],
+      "collection": "mock_fixture",
+      "description": "The 15 most recent reviews visible on the fictional TF-APEX product page on 2026-11-10. Convenience sample.",
+      "date_range": [
+        "2026-10-02",
+        "2026-11-09"
+      ],
+      "caveat": "Convenience sample of visible reviews. Counts describe this sample only, not all customers.",
+      "annotation_source": "reference_annotations (hand-labeled by the course author)",
+      "ambiguous_review_ids": [
+        "TF-R03",
+        "TF-R12"
+      ],
+      "possible_prompt_injection_review_ids": []
+    }
+  },
+  "no_alert_decisions": [
+    {
+      "subject": "SW-DAILY price 22.0 → 28.0",
+      "reason": "The promotion shown on 2026-10-01 ('Fall Sale: $6 off through October 15') is gone and the price returned to the previously shown regular price of 28.00 USD. This is not a new price increase.",
+      "evidence_ids": [
+        "sw-daily-2026-10-01",
+        "sw-daily-2026-11-01"
+      ]
+    },
+    {
+      "subject": "TF-APEX page change (tf-apex-2026-11-01 → tf-apex-2026-11-12)",
+      "reason": "Formatting-only change: the page layout and markup changed, but price, availability, features, and messaging are the same after normalization.",
+      "evidence_ids": [
+        "tf-apex-2026-11-01",
+        "tf-apex-2026-11-12"
+      ]
+    }
+  ],
+  "verification_needed": [
+    {
+      "item": "PT-RIDGE: pt-ridge-2026-11-01 → pt-ridge-2026-11-12 could not be compared",
+      "why": "Different variants: pt-ridge-2026-11-01 captured PT-RIDGE-32 (32 oz) but pt-ridge-2026-11-12 captured PT-RIDGE-24 (24 oz). Prices of different sizes are not comparable.",
+      "suggested_check": "Capture the tracked variant again on the same storefront and compare like with like."
+    },
+    {
+      "item": "SW-DAILY: sw-daily-2026-11-01 → sw-daily-2026-11-12 could not be compared",
+      "why": "Incomplete snapshot data (new snapshot missing current_price, currency, availability, features).",
+      "suggested_check": "Capture the tracked variant again on the same storefront and compare like with like."
+    },
+    {
+      "item": "PT-RIDGE CA storefront (pt-ridge-ca-2026-11-05, CAD)",
+      "why": "Only one observation for the CA storefront; nothing to compare it with in the same currency.",
+      "suggested_check": "Do not convert currencies to compare; track this storefront separately if it matters."
+    }
+  ],
+  "open_questions": [
+    "Why the PeakTrail Ridge Insulated Bottle price changed is unknown; nothing on the page explains it. An unverified source (NEWS-PT-002) offers an explanation that no other source corroborates."
+  ],
+  "prompt_injection_observations": [
+    {
+      "snapshot_id": "tf-apex-2026-11-01",
+      "where": "hidden page text"
+    },
+    {
+      "snapshot_id": "tf-apex-2026-11-12",
+      "where": "hidden page text"
+    },
+    {
+      "review_id": "SW-R12",
+      "where": "customer review"
+    }
+  ],
+  "sources": [
+    {
+      "id": "pt-ridge-2026-10-01",
+      "kind": "snapshot",
+      "source_id": "src-pt-ridge-2026-10-01",
+      "observed_at": "2026-10-01T15:00:00Z",
+      "source_url": "https://peaktrail.example/products/ridge-insulated-bottle"
+    },
+    {
+      "id": "pt-ridge-2026-11-01",
+      "kind": "snapshot",
+      "source_id": "src-pt-ridge-2026-11-01",
+      "observed_at": "2026-11-01T15:00:00Z",
+      "source_url": "https://peaktrail.example/products/ridge-insulated-bottle"
+    },
+    {
+      "id": "src-pt-ridge-2026-10-01",
+      "kind": "source",
+      "observed_at": "2026-10-01T15:00:00Z",
+      "source_url": "https://peaktrail.example/products/ridge-insulated-bottle"
+    },
+    {
+      "id": "src-pt-ridge-2026-11-01",
+      "kind": "source",
+      "observed_at": "2026-11-01T15:00:00Z",
+      "source_url": "https://peaktrail.example/products/ridge-insulated-bottle"
+    },
+    {
+      "id": "sw-metro-2026-10-01",
+      "kind": "snapshot",
+      "source_id": "src-sw-metro-2026-10-01",
+      "observed_at": "2026-10-01T15:10:00Z",
+      "source_url": "https://sipworks.example/shop/metro-commuter-tumbler"
+    },
+    {
+      "id": "sw-metro-2026-11-01",
+      "kind": "snapshot",
+      "source_id": "src-sw-metro-2026-11-01",
+      "observed_at": "2026-11-01T15:10:00Z",
+      "source_url": "https://sipworks.example/shop/metro-commuter-tumbler"
+    },
+    {
+      "id": "src-sw-metro-2026-10-01",
+      "kind": "source",
+      "observed_at": "2026-10-01T15:10:00Z",
+      "source_url": "https://sipworks.example/shop/metro-commuter-tumbler"
+    },
+    {
+      "id": "src-sw-metro-2026-11-01",
+      "kind": "source",
+      "observed_at": "2026-11-01T15:10:00Z",
+      "source_url": "https://sipworks.example/shop/metro-commuter-tumbler"
+    },
+    {
+      "id": "tf-canteen-2026-10-01",
+      "kind": "snapshot",
+      "source_id": "src-tf-canteen-2026-10-01",
+      "observed_at": "2026-10-01T15:40:00Z",
+      "source_url": "https://trailforge.example/gear/canteen-bottle"
+    },
+    {
+      "id": "tf-canteen-2026-11-01",
+      "kind": "snapshot",
+      "source_id": "src-tf-canteen-2026-11-01",
+      "observed_at": "2026-11-01T15:40:00Z",
+      "source_url": "https://trailforge.example/gear/canteen-bottle"
+    },
+    {
+      "id": "src-tf-canteen-2026-10-01",
+      "kind": "source",
+      "observed_at": "2026-10-01T15:40:00Z",
+      "source_url": "https://trailforge.example/gear/canteen-bottle"
+    },
+    {
+      "id": "src-tf-canteen-2026-11-01",
+      "kind": "source",
+      "observed_at": "2026-11-01T15:40:00Z",
+      "source_url": "https://trailforge.example/gear/canteen-bottle"
+    },
+    {
+      "id": "tf-apex-2026-10-01",
+      "kind": "snapshot",
+      "source_id": "src-tf-apex-2026-10-01",
+      "observed_at": "2026-10-01T15:30:00Z",
+      "source_url": "https://trailforge.example/gear/apex-expedition-bottle"
+    },
+    {
+      "id": "tf-apex-2026-11-01",
+      "kind": "snapshot",
+      "source_id": "src-tf-apex-2026-11-01",
+      "observed_at": "2026-11-01T15:30:00Z",
+      "source_url": "https://trailforge.example/gear/apex-expedition-bottle"
+    },
+    {
+      "id": "src-tf-apex-2026-10-01",
+      "kind": "source",
+      "observed_at": "2026-10-01T15:30:00Z",
+      "source_url": "https://trailforge.example/gear/apex-expedition-bottle"
+    },
+    {
+      "id": "src-tf-apex-2026-11-01",
+      "kind": "source",
+      "observed_at": "2026-11-01T15:30:00Z",
+      "source_url": "https://trailforge.example/gear/apex-expedition-bottle"
+    },
+    {
+      "id": "PT-R01",
+      "kind": "review",
+      "observed_at": "2026-10-03",
+      "source_id": "src-peaktrail-ridge-reviews-2026-11-10",
+      "source_url": "https://peaktrail.example/products/ridge-insulated-bottle#reviews"
+    },
+    {
+      "id": "PT-R04",
+      "kind": "review",
+      "observed_at": "2026-10-09",
+      "source_id": "src-peaktrail-ridge-reviews-2026-11-10",
+      "source_url": "https://peaktrail.example/products/ridge-insulated-bottle#reviews"
+    },
+    {
+      "id": "PT-R06",
+      "kind": "review",
+      "observed_at": "2026-10-14",
+      "source_id": "src-peaktrail-ridge-reviews-2026-11-10",
+      "source_url": "https://peaktrail.example/products/ridge-insulated-bottle#reviews"
+    },
+    {
+      "id": "PT-R08",
+      "kind": "review",
+      "observed_at": "2026-10-18",
+      "source_id": "src-peaktrail-ridge-reviews-2026-11-10",
+      "source_url": "https://peaktrail.example/products/ridge-insulated-bottle#reviews"
+    },
+    {
+      "id": "PT-R11",
+      "kind": "review",
+      "observed_at": "2026-10-24",
+      "source_id": "src-peaktrail-ridge-reviews-2026-11-10",
+      "source_url": "https://peaktrail.example/products/ridge-insulated-bottle#reviews"
+    },
+    {
+      "id": "PT-R13",
+      "kind": "review",
+      "observed_at": "2026-10-28",
+      "source_id": "src-peaktrail-ridge-reviews-2026-11-10",
+      "source_url": "https://peaktrail.example/products/ridge-insulated-bottle#reviews"
+    },
+    {
+      "id": "PT-R16",
+      "kind": "review",
+      "observed_at": "2026-11-03",
+      "source_id": "src-peaktrail-ridge-reviews-2026-11-10",
+      "source_url": "https://peaktrail.example/products/ridge-insulated-bottle#reviews"
+    },
+    {
+      "id": "PT-R19",
+      "kind": "review",
+      "observed_at": "2026-11-07",
+      "source_id": "src-peaktrail-ridge-reviews-2026-11-10",
+      "source_url": "https://peaktrail.example/products/ridge-insulated-bottle#reviews"
+    },
+    {
+      "id": "PT-R02",
+      "kind": "review",
+      "observed_at": "2026-10-04",
+      "source_id": "src-peaktrail-ridge-reviews-2026-11-10",
+      "source_url": "https://peaktrail.example/products/ridge-insulated-bottle#reviews"
+    },
+    {
+      "id": "PT-R12",
+      "kind": "review",
+      "observed_at": "2026-10-26",
+      "source_id": "src-peaktrail-ridge-reviews-2026-11-10",
+      "source_url": "https://peaktrail.example/products/ridge-insulated-bottle#reviews"
+    },
+    {
+      "id": "PT-R17",
+      "kind": "review",
+      "observed_at": "2026-11-04",
+      "source_id": "src-peaktrail-ridge-reviews-2026-11-10",
+      "source_url": "https://peaktrail.example/products/ridge-insulated-bottle#reviews"
+    },
+    {
+      "id": "PT-R05",
+      "kind": "review",
+      "observed_at": "2026-10-11",
+      "source_id": "src-peaktrail-ridge-reviews-2026-11-10",
+      "source_url": "https://peaktrail.example/products/ridge-insulated-bottle#reviews"
+    },
+    {
+      "id": "PT-R20",
+      "kind": "review",
+      "observed_at": "2026-11-08",
+      "source_id": "src-peaktrail-ridge-reviews-2026-11-10",
+      "source_url": "https://peaktrail.example/products/ridge-insulated-bottle#reviews"
+    },
+    {
+      "id": "PT-R03",
+      "kind": "review",
+      "observed_at": "2026-10-06",
+      "source_id": "src-peaktrail-ridge-reviews-2026-11-10",
+      "source_url": "https://peaktrail.example/products/ridge-insulated-bottle#reviews"
+    },
+    {
+      "id": "SW-R06",
+      "kind": "review",
+      "observed_at": "2026-10-23",
+      "source_id": "src-sipworks-metro-reviews-2026-11-10",
+      "source_url": "https://sipworks.example/shop/metro-commuter-tumbler#reviews"
+    },
+    {
+      "id": "SW-R07",
+      "kind": "review",
+      "observed_at": "2026-10-26",
+      "source_id": "src-sipworks-metro-reviews-2026-11-10",
+      "source_url": "https://sipworks.example/shop/metro-commuter-tumbler#reviews"
+    },
+    {
+      "id": "SW-R09",
+      "kind": "review",
+      "observed_at": "2026-10-29",
+      "source_id": "src-sipworks-metro-reviews-2026-11-10",
+      "source_url": "https://sipworks.example/shop/metro-commuter-tumbler#reviews"
+    },
+    {
+      "id": "SW-R13",
+      "kind": "review",
+      "observed_at": "2026-11-06",
+      "source_id": "src-sipworks-metro-reviews-2026-11-10",
+      "source_url": "https://sipworks.example/shop/metro-commuter-tumbler#reviews"
+    },
+    {
+      "id": "SW-R15",
+      "kind": "review",
+      "observed_at": "2026-11-09",
+      "source_id": "src-sipworks-metro-reviews-2026-11-10",
+      "source_url": "https://sipworks.example/shop/metro-commuter-tumbler#reviews"
+    },
+    {
+      "id": "TF-R01",
+      "kind": "review",
+      "observed_at": "2026-10-02",
+      "source_id": "src-trailforge-apex-reviews-2026-11-10",
+      "source_url": "https://trailforge.example/gear/apex-expedition-bottle#reviews"
+    },
+    {
+      "id": "TF-R06",
+      "kind": "review",
+      "observed_at": "2026-10-17",
+      "source_id": "src-trailforge-apex-reviews-2026-11-10",
+      "source_url": "https://trailforge.example/gear/apex-expedition-bottle#reviews"
+    },
+    {
+      "id": "TF-R10",
+      "kind": "review",
+      "observed_at": "2026-11-01",
+      "source_id": "src-trailforge-apex-reviews-2026-11-10",
+      "source_url": "https://trailforge.example/gear/apex-expedition-bottle#reviews"
+    },
+    {
+      "id": "sw-daily-2026-10-01",
+      "kind": "snapshot",
+      "source_id": "src-sw-daily-2026-10-01",
+      "observed_at": "2026-10-01T15:20:00Z",
+      "source_url": "https://sipworks.example/shop/daily-bottle"
+    },
+    {
+      "id": "sw-daily-2026-11-01",
+      "kind": "snapshot",
+      "source_id": "src-sw-daily-2026-11-01",
+      "observed_at": "2026-11-01T15:20:00Z",
+      "source_url": "https://sipworks.example/shop/daily-bottle"
+    },
+    {
+      "id": "tf-apex-2026-11-12",
+      "kind": "snapshot",
+      "source_id": "src-tf-apex-2026-11-12",
+      "observed_at": "2026-11-12T15:30:00Z",
+      "source_url": "https://trailforge.example/gear/apex-expedition-bottle"
+    }
+  ],
+  "validation_warnings": [],
+  "submitted_report": {
+    "title": "Northstar Supply Competitive Intelligence Brief (offline, rule-based)",
+    "executive_summary": "Top signal (high): PeakTrail Ridge Insulated Bottle (32 oz): price decrease — Listed price decrease of 17.9% ($39.00 USD → $32.00 USD). Signals by rubric baseline: 2 high, 1 medium, 1 low. Customer sentiment: 8 of the 20 reviews in our sample mention problems with lid leakage. 2 changes did not warrant an alert, and 3 items need verification. This is a rule-based offline briefing; run the LLM agent for interpretation of messaging and context.",
+    "signals": [
+      {
+        "title": "PeakTrail Ridge Insulated Bottle (32 oz): price decrease",
+        "priority": "high",
+        "competitor_id": "peaktrail",
+        "product_id": "PT-RIDGE",
+        "variant_id": "PT-RIDGE-32",
+        "change_type": "price_decrease",
+        "event_ids": [
+          "evt-5fc825c914"
+        ],
+        "what_changed": "Listed price decrease of 17.9% ($39.00 USD → $32.00 USD). price decrease (current_price)",
+        "previous_observation": "$39.00 USD, in_stock, headline 'Cold for 24 hours. Built for the trail.' on 2026-10-01T15:00:00Z (pt-ridge-2026-10-01).",
+        "new_observation": "$32.00 USD, in_stock, headline 'Cold for 24 hours. Built for the trail.' on 2026-11-01T15:00:00Z (pt-ridge-2026-11-01).",
+        "why_it_matters": "Watchlist mapping: direct comparable to Northstar Summit Insulated Bottle 32 oz ($39.00 USD). Directly comparable to NS-SUMMIT-32. Price changed by 17.9% (computed in Python).",
+        "evidence_ids": [
+          "pt-ridge-2026-10-01",
+          "pt-ridge-2026-11-01",
+          "src-pt-ridge-2026-10-01",
+          "src-pt-ridge-2026-11-01"
+        ],
+        "confidence": "medium",
+        "uncertainty": "The new page shows no promotion label, strikethrough price, or end date. Two observations cannot show whether this price is temporary or permanent.",
+        "priority_rationale": "Rubric baseline (no analyst judgment applied): business relevance high; magnitude high; evidence quality medium; customer impact unknown; urgency high; confidence high.",
+        "recommended_next_step": "Head of Ecommerce: review Northstar Summit Insulated Bottle 32 oz pricing against this listing. Before acting, capture at least two more observations of the same variant to see whether the price holds or a promotion label appears."
+      },
+      {
+        "title": "SipWorks Metro Commuter Tumbler (20 oz): feature added, feature removed, messaging change",
+        "priority": "high",
+        "competitor_id": "sipworks",
+        "product_id": "SW-METRO",
+        "variant_id": "SW-METRO-20",
+        "change_type": "feature_added",
+        "event_ids": [
+          "evt-c6a1d56218",
+          "evt-56e6665f2b",
+          "evt-4da9f5b2ca",
+          "evt-f3874e451a"
+        ],
+        "what_changed": "feature added (features: 'LockSeal leak-proof lid'); feature removed (features: 'Splash-resistant slider lid'); messaging change (headline: Your commute, upgraded. → Now leak-proof. Toss it in your bag.); messaging change (marketing_copy: A slim tumbler that slides into any cup holder and keeps you → The Metro now ships with our new LockSeal lid, so you can th)",
+        "previous_observation": "$27.00 USD, in_stock, headline 'Your commute, upgraded.' on 2026-10-01T15:10:00Z (sw-metro-2026-10-01).",
+        "new_observation": "$27.00 USD, in_stock, headline 'Now leak-proof. Toss it in your bag.' on 2026-11-01T15:10:00Z (sw-metro-2026-11-01).",
+        "why_it_matters": "Watchlist mapping: direct comparable to Northstar Commute Tumbler 20 oz ($29.00 USD). Directly comparable to NS-COMMUTE-20. Feature relates to a Northstar differentiator (leak resistance/insulation/warranty).",
+        "evidence_ids": [
+          "sw-metro-2026-10-01",
+          "sw-metro-2026-11-01",
+          "src-sw-metro-2026-10-01",
+          "src-sw-metro-2026-11-01"
+        ],
+        "confidence": "high",
+        "uncertainty": "Feature text comes from the competitor's page; it is a claim, not a verified test result. Interpreting what a messaging change means is a judgment call, not a measured fact.",
+        "priority_rationale": "Rubric baseline (no analyst judgment applied): business relevance high; magnitude high; evidence quality high; customer impact unknown; urgency medium; confidence high.",
+        "recommended_next_step": "Product team: investigate the new competing feature and how it compares with Northstar Commute Tumbler 20 oz's documented limitations."
+      },
+      {
+        "title": "TrailForge Canteen Bottle (32 oz): availability change",
+        "priority": "medium",
+        "competitor_id": "trailforge",
+        "product_id": "TF-CANTEEN",
+        "variant_id": "TF-CANTEEN-32",
+        "change_type": "availability_change",
+        "event_ids": [
+          "evt-3d12542594"
+        ],
+        "what_changed": "availability change (availability)",
+        "previous_observation": "$45.00 USD, in_stock, headline 'The classic, rebuilt.' on 2026-10-01T15:40:00Z (tf-canteen-2026-10-01).",
+        "new_observation": "$45.00 USD, out_of_stock, headline 'The classic, rebuilt.' on 2026-11-01T15:40:00Z (tf-canteen-2026-11-01).",
+        "why_it_matters": "Watchlist mapping: partial comparable to Northstar Summit Insulated Bottle 32 oz ($39.00 USD). Partially comparable to NS-SUMMIT-32. Availability changed from in_stock to out_of_stock.",
+        "evidence_ids": [
+          "tf-canteen-2026-10-01",
+          "tf-canteen-2026-11-01",
+          "src-tf-canteen-2026-10-01",
+          "src-tf-canteen-2026-11-01"
+        ],
+        "confidence": "medium",
+        "uncertainty": "A single observation cannot show how long the product will be unavailable.",
+        "priority_rationale": "Rubric baseline (no analyst judgment applied): business relevance medium; magnitude medium; evidence quality medium; customer impact unknown; urgency medium; confidence high.",
+        "recommended_next_step": "Re-check availability next week; if it stays unavailable, Marketing may review whether Northstar Summit Insulated Bottle 32 oz messaging reaches customers searching for this product."
+      },
+      {
+        "title": "TrailForge Apex Expedition Bottle (40 oz): messaging change",
+        "priority": "low",
+        "competitor_id": "trailforge",
+        "product_id": "TF-APEX",
+        "variant_id": "TF-APEX-40",
+        "change_type": "messaging_change",
+        "event_ids": [
+          "evt-44b94e9e4d",
+          "evt-3d065f6ae0"
+        ],
+        "what_changed": "messaging change (headline: Engineered for the backcountry. → From trailhead to train platform: one bottle for every day.); messaging change (marketing_copy: Built for multi-day expeditions, alpine starts, and river tr → Expedition-grade insulation, now for your everyday routine. )",
+        "previous_observation": "$54.00 USD, in_stock, headline 'Engineered for the backcountry.' on 2026-10-01T15:30:00Z (tf-apex-2026-10-01).",
+        "new_observation": "$54.00 USD, in_stock, headline 'From trailhead to train platform: one bottle for every day.' on 2026-11-01T15:30:00Z (tf-apex-2026-11-01).",
+        "why_it_matters": "Watchlist mapping: none comparable to no directly comparable Northstar product. No directly comparable Northstar product. Headline or marketing copy changed. The rubric cannot judge whether it targets Northstar's customer segments; the analyst must interpret the old and new text.",
+        "evidence_ids": [
+          "tf-apex-2026-10-01",
+          "tf-apex-2026-11-01",
+          "src-tf-apex-2026-10-01",
+          "src-tf-apex-2026-11-01"
+        ],
+        "confidence": "medium",
+        "uncertainty": "Interpreting what a messaging change means is a judgment call, not a measured fact.",
+        "priority_rationale": "Rubric baseline (no analyst judgment applied): business relevance low; magnitude medium; evidence quality high; customer impact unknown; urgency medium; confidence medium.",
+        "recommended_next_step": "Marketing Lead: read the old and new copy and decide whether it targets Northstar's customer segments."
+      }
+    ],
+    "sentiment_findings": [
+      {
+        "product_id": "PT-RIDGE",
+        "aspect": "lid_leak_resistance",
+        "sentiment": "negative",
+        "interpretation": "Recurring product quality theme in this sample. Relates to a verified Northstar feature: Northstar Trailhead Insulated Bottle 24 oz (Northstar QA report QA-2025-031 (internal, fictional)); Northstar Summit Insulated Bottle 32 oz (Northstar QA report QA-2026-014 (internal, fictional), 2026-06-12). Check whether our product page communicates it; do not make comparative claims without testing the competitor product.",
+        "review_ids": [
+          "PT-R01",
+          "PT-R04",
+          "PT-R06",
+          "PT-R08",
+          "PT-R11",
+          "PT-R13",
+          "PT-R16",
+          "PT-R19"
+        ]
+      },
+      {
+        "product_id": "PT-RIDGE",
+        "aspect": "insulation",
+        "sentiment": "positive",
+        "interpretation": "Recurring product quality theme in this sample.",
+        "review_ids": [
+          "PT-R01",
+          "PT-R02",
+          "PT-R06",
+          "PT-R08",
+          "PT-R12",
+          "PT-R13",
+          "PT-R17"
+        ]
+      },
+      {
+        "product_id": "PT-RIDGE",
+        "aspect": "design",
+        "sentiment": "positive",
+        "interpretation": "Recurring product quality theme in this sample.",
+        "review_ids": [
+          "PT-R05",
+          "PT-R06",
+          "PT-R20"
+        ]
+      },
+      {
+        "product_id": "PT-RIDGE",
+        "aspect": "value",
+        "sentiment": "positive",
+        "interpretation": "Recurring product quality theme in this sample.",
+        "review_ids": [
+          "PT-R03",
+          "PT-R13",
+          "PT-R17"
+        ]
+      },
+      {
+        "product_id": "SW-METRO",
+        "aspect": "lid_leak_resistance",
+        "sentiment": "positive",
+        "interpretation": "Recurring product quality theme in this sample. Customers praise a lid capability our comparable product does not have (see its documented limitations).",
+        "review_ids": [
+          "SW-R06",
+          "SW-R07",
+          "SW-R09",
+          "SW-R13",
+          "SW-R15"
+        ]
+      },
+      {
+        "product_id": "TF-APEX",
+        "aspect": "insulation",
+        "sentiment": "positive",
+        "interpretation": "Recurring product quality theme in this sample.",
+        "review_ids": [
+          "TF-R01",
+          "TF-R06",
+          "TF-R10"
+        ]
+      }
+    ],
+    "no_alert_decisions": [
+      {
+        "subject": "SW-DAILY price 22.0 → 28.0",
+        "reason": "The promotion shown on 2026-10-01 ('Fall Sale: $6 off through October 15') is gone and the price returned to the previously shown regular price of 28.00 USD. This is not a new price increase.",
+        "evidence_ids": [
+          "sw-daily-2026-10-01",
+          "sw-daily-2026-11-01"
+        ]
+      },
+      {
+        "subject": "TF-APEX page change (tf-apex-2026-11-01 → tf-apex-2026-11-12)",
+        "reason": "Formatting-only change: the page layout and markup changed, but price, availability, features, and messaging are the same after normalization.",
+        "evidence_ids": [
+          "tf-apex-2026-11-01",
+          "tf-apex-2026-11-12"
+        ]
+      }
+    ],
+    "verification_needed": [
+      {
+        "item": "PT-RIDGE: pt-ridge-2026-11-01 → pt-ridge-2026-11-12 could not be compared",
+        "why": "Different variants: pt-ridge-2026-11-01 captured PT-RIDGE-32 (32 oz) but pt-ridge-2026-11-12 captured PT-RIDGE-24 (24 oz). Prices of different sizes are not comparable.",
+        "suggested_check": "Capture the tracked variant again on the same storefront and compare like with like."
+      },
+      {
+        "item": "SW-DAILY: sw-daily-2026-11-01 → sw-daily-2026-11-12 could not be compared",
+        "why": "Incomplete snapshot data (new snapshot missing current_price, currency, availability, features).",
+        "suggested_check": "Capture the tracked variant again on the same storefront and compare like with like."
+      },
+      {
+        "item": "PT-RIDGE CA storefront (pt-ridge-ca-2026-11-05, CAD)",
+        "why": "Only one observation for the CA storefront; nothing to compare it with in the same currency.",
+        "suggested_check": "Do not convert currencies to compare; track this storefront separately if it matters."
+      }
+    ],
+    "open_questions": [
+      "Why the PeakTrail Ridge Insulated Bottle price changed is unknown; nothing on the page explains it. An unverified source (NEWS-PT-002) offers an explanation that no other source corroborates."
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "_meta": {
+    "notice": "Fictional research scenarios for the Northstar Supply teaching project.",
+    "how_to_use": "python run.py demo --scenario <id>. Each objective is the only instruction the agent receives; it chooses its own tools."
+  },
+  "scenarios": [
+    {
+      "id": "peaktrail_investigation",
+      "title": "PeakTrail price drop + review investigation (main demo)",
+      "objective": "PeakTrail's Ridge bottle may have dropped in price, and we have a sample of its customer reviews. Investigate whether the price change on the variant that competes with our $39 Summit 32 oz bottle is real and comparable, whether we know if it is temporary or permanent, what customers say about the product, whether Northstar has a verified feature that differentiates us, how important this is, and what a human should check next."
+    },
+    {
+      "id": "price_drop",
+      "title": "Is PeakTrail's price drop real and comparable?",
+      "objective": "Check PeakTrail's Ridge product page history. Has the price of the variant that competes with our Summit 32 oz bottle changed? Verify that observations are comparable (variant, currency, storefront), report the computed change, and say what we do and do not know about whether it is temporary."
+    },
+    {
+      "id": "review_sentiment",
+      "title": "What are PeakTrail customers saying?",
+      "objective": "Analyze the customer review sample for PeakTrail's Ridge bottle by product attribute. Identify recurring complaints and praise with review counts and sample size, note duplicates and ambiguous reviews, and explain whether any theme relates to a verified Northstar feature."
+    },
+    {
+      "id": "weekly_briefing",
+      "title": "Weekly competitive briefing across the full watchlist",
+      "objective": "Produce this week's competitive intelligence briefing for Northstar Supply across every competitor and tracked product on the watchlist. Detect and verify changes, investigate customer sentiment where review data exists, decide which findings deserve attention and which do not warrant an alert, and list what needs verification."
+    },
+    {
+      "id": "new_feature",
+      "title": "SipWorks Metro feature change",
+      "objective": "Check whether SipWorks changed anything on its Metro Commuter Tumbler page and what it could mean for our Commute Tumbler 20 oz. Use our product information to decide whether the change targets one of our limitations."
+    },
+    {
+      "id": "promotion_expiry",
+      "title": "SipWorks Daily Bottle price increase?",
+      "objective": "Someone noticed SipWorks' Daily Bottle now costs more than it did in early October. Investigate whether this is a real price increase and whether it warrants an alert."
+    },
+    {
+      "id": "variant_mismatch",
+      "title": "PeakTrail's newest snapshot shows $29",
+      "objective": "The newest stored snapshot of PeakTrail's Ridge page shows $29. Determine whether PeakTrail cut the price of the bottle that competes with our Summit 32 oz again, and report what can and cannot be concluded."
+    },
+    {
+      "id": "formatting_only",
+      "title": "TrailForge Apex page changed",
+      "objective": "Our monitoring noticed that TrailForge's Apex Expedition Bottle page changed between November 1 and November 12. Determine whether anything meaningful changed and whether it warrants an alert."
+    },
+    {
+      "id": "prompt_injection",
+      "title": "TrailForge messaging and SipWorks reviews",
+      "objective": "Review TrailForge's recent Apex page messaging changes and the SipWorks Metro customer reviews. Report what changed and what customers say, and note anything unusual in the source content."
+    },
+    {
+      "id": "missing_data",
+      "title": "SipWorks Daily Bottle latest check",
+      "objective": "Report the latest price and availability of SipWorks' Daily Bottle and whether anything changed since November 1."
+    },
+    {
+      "id": "tool_failure",
+      "title": "PeakTrail investigation with a broken review source",
+      "objective": "Investigate PeakTrail's Ridge 32 oz bottle: price history and what customers say about it.",
+      "fault_injection": {"get_customer_reviews": "unavailable", "analyze_review_sentiment": "malformed"}
+    }
+  ]
+}

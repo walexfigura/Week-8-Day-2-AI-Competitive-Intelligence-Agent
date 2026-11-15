@@ -1,0 +1,268 @@
+{
+  "_meta": {
+    "notice": "FICTIONAL DATA for the Northstar Supply teaching project (10 Weeks to AI Agents). Not real companies, products, prices, or reviews.",
+    "dataset_id": "sipworks-metro-reviews",
+    "purpose": "Hand-labeled reference annotations written by the course author. Used for offline demos and to score the LLM review annotator in evaluations. Not model output.",
+    "aspect_vocabulary": [
+      "insulation",
+      "lid_leak_resistance",
+      "lid_usability",
+      "durability",
+      "design",
+      "value",
+      "weight",
+      "size_fit",
+      "cleaning",
+      "shipping",
+      "customer_service",
+      "general"
+    ]
+  },
+  "annotations": [
+    {
+      "review_id": "SW-R01",
+      "aspects": [
+        {
+          "aspect": "size_fit",
+          "sentiment": "positive",
+          "evidence_quote": "Fits my car cup holder perfectly"
+        },
+        {
+          "aspect": "insulation",
+          "sentiment": "positive",
+          "evidence_quote": "Coffee stays hot through my commute"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "SW-R02",
+      "aspects": [
+        {
+          "aspect": "lid_leak_resistance",
+          "sentiment": "negative",
+          "evidence_quote": "Slider lid splashes coffee every time I hit a bump"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "SW-R03",
+      "aspects": [
+        {
+          "aspect": "insulation",
+          "sentiment": "negative",
+          "evidence_quote": "Coffee is lukewarm by lunchtime"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "SW-R04",
+      "aspects": [
+        {
+          "aspect": "value",
+          "sentiment": "positive",
+          "evidence_quote": "Cheap"
+        },
+        {
+          "aspect": "design",
+          "sentiment": "positive",
+          "evidence_quote": "cute"
+        },
+        {
+          "aspect": "size_fit",
+          "sentiment": "positive",
+          "evidence_quote": "fits everywhere"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "SW-R05",
+      "aspects": [
+        {
+          "aspect": "lid_leak_resistance",
+          "sentiment": "negative",
+          "evidence_quote": "The slider lid let tea drip onto my jeans"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "SW-R06",
+      "aspects": [
+        {
+          "aspect": "lid_leak_resistance",
+          "sentiment": "positive",
+          "evidence_quote": "a commuter cup I can throw in my bag without a mess"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "SW-R07",
+      "aspects": [
+        {
+          "aspect": "lid_leak_resistance",
+          "sentiment": "positive",
+          "evidence_quote": "LockSeal lid really is leak-proof in my backpack"
+        },
+        {
+          "aspect": "cleaning",
+          "sentiment": "negative",
+          "evidence_quote": "Gasket is a pain to clean"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "SW-R08",
+      "aspects": [
+        {
+          "aspect": "lid_leak_resistance",
+          "sentiment": "positive",
+          "evidence_quote": "LockSeal lid really is leakproof in my backpack"
+        },
+        {
+          "aspect": "cleaning",
+          "sentiment": "negative",
+          "evidence_quote": "The gasket is a pain to clean"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": "Duplicate of SW-R07"
+    },
+    {
+      "review_id": "SW-R09",
+      "aspects": [
+        {
+          "aspect": "lid_leak_resistance",
+          "sentiment": "positive",
+          "evidence_quote": "The leak-proof lid works"
+        },
+        {
+          "aspect": "lid_usability",
+          "sentiment": "negative",
+          "evidence_quote": "stiff to open with one hand"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "SW-R10",
+      "aspects": [
+        {
+          "aspect": "value",
+          "sentiment": "positive",
+          "evidence_quote": "Good value at $27"
+        },
+        {
+          "aspect": "durability",
+          "sentiment": "negative",
+          "evidence_quote": "The color faded after a few dishwasher runs"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "SW-R11",
+      "aspects": [
+        {
+          "aspect": "shipping",
+          "sentiment": "negative",
+          "evidence_quote": "Order arrived two weeks late"
+        },
+        {
+          "aspect": "customer_service",
+          "sentiment": "negative",
+          "evidence_quote": "support kept sending canned replies"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "SW-R12",
+      "aspects": [
+        {
+          "aspect": "general",
+          "sentiment": "positive",
+          "evidence_quote": "Great tumbler"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": true,
+      "notes": null
+    },
+    {
+      "review_id": "SW-R13",
+      "aspects": [
+        {
+          "aspect": "insulation",
+          "sentiment": "positive",
+          "evidence_quote": "Keeps iced coffee cold for hours"
+        },
+        {
+          "aspect": "lid_leak_resistance",
+          "sentiment": "positive",
+          "evidence_quote": "The new lid clicks shut securely"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "SW-R14",
+      "aspects": [
+        {
+          "aspect": "general",
+          "sentiment": "neutral",
+          "evidence_quote": "It's fine"
+        }
+      ],
+      "ambiguous": true,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "SW-R15",
+      "aspects": [
+        {
+          "aspect": "lid_leak_resistance",
+          "sentiment": "positive",
+          "evidence_quote": "The lid is leak-proof now"
+        },
+        {
+          "aspect": "insulation",
+          "sentiment": "negative",
+          "evidence_quote": "my coffee went cold by 10am"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    }
+  ]
+}

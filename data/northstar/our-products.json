@@ -1,0 +1,127 @@
+{
+  "_meta": {
+    "notice": "FICTIONAL DATA for the Northstar Supply teaching project (10 Weeks to AI Agents). Not a real company or real products.",
+    "as_of": "2026-11-10",
+    "human_readable_version": "knowledge-base/our-products.md"
+  },
+  "products": [
+    {
+      "product_id": "NS-SUMMIT-32",
+      "name": "Northstar Summit Insulated Bottle 32 oz",
+      "category": "Drinkware",
+      "price": 39.00,
+      "currency": "USD",
+      "size_oz": 32,
+      "availability": "in_stock",
+      "specifications": {
+        "material": "18/8 stainless steel body, BPA-free lid",
+        "insulation": "Double-wall vacuum; cold up to 24 hours, hot up to 12 hours",
+        "lid": "LeakLock two-stage screw lid with replaceable silicone gasket",
+        "base_diameter_in": 3.6,
+        "weight_oz": 17,
+        "warranty": "5 years"
+      },
+      "verified_features": [
+        {
+          "feature": "LeakLock lid passed 1,000 inversion cycles with zero leaks",
+          "evidence": "Northstar QA report QA-2026-014 (internal, fictional), 2026-06-12",
+          "approved_for_marketing": true
+        },
+        {
+          "feature": "Cold up to 24 hours / hot up to 12 hours",
+          "evidence": "Northstar QA report QA-2026-009 (internal, fictional)",
+          "approved_for_marketing": true
+        },
+        {
+          "feature": "Replaceable lid gasket sold separately ($4)",
+          "evidence": "Northstar catalog SKU NS-GSKT-01",
+          "approved_for_marketing": true
+        }
+      ],
+      "differentiators": [
+        "Leak resistance is independently verified in our own QA testing (not just a marketing claim).",
+        "5-year warranty (longer than PeakTrail's 2 years; shorter than TrailForge's lifetime warranty)."
+      ],
+      "limitations": [
+        "3.6-inch base does not fit most car cup holders.",
+        "Heavier than most 32 oz competitors (17 oz empty).",
+        "Bottle body is hand-wash only."
+      ],
+      "comparable_competitor_variants": ["PT-RIDGE-32", "TF-CANTEEN-32"]
+    },
+    {
+      "product_id": "NS-TRAILHEAD-24",
+      "name": "Northstar Trailhead Insulated Bottle 24 oz",
+      "category": "Drinkware",
+      "price": 34.00,
+      "currency": "USD",
+      "size_oz": 24,
+      "availability": "in_stock",
+      "specifications": {
+        "material": "18/8 stainless steel body, BPA-free lid",
+        "insulation": "Double-wall vacuum; cold up to 24 hours, hot up to 12 hours",
+        "lid": "Leak-proof flip lid",
+        "base_diameter_in": 2.9,
+        "weight_oz": 13,
+        "warranty": "24 months"
+      },
+      "verified_features": [
+        {
+          "feature": "Flip lid passed 500 inversion cycles with zero leaks",
+          "evidence": "Northstar QA report QA-2025-031 (internal, fictional)",
+          "approved_for_marketing": true
+        },
+        {
+          "feature": "Fits most standard car cup holders (2.9-inch base)",
+          "evidence": "Product specification sheet",
+          "approved_for_marketing": true
+        }
+      ],
+      "differentiators": [
+        "Cup-holder friendly with a verified leak-proof lid."
+      ],
+      "limitations": [
+        "Lid is top-rack dishwasher safe, but the bottle body is hand-wash only.",
+        "Only two colors available."
+      ],
+      "comparable_competitor_variants": ["PT-RIDGE-24", "SW-DAILY-24"]
+    },
+    {
+      "product_id": "NS-COMMUTE-20",
+      "name": "Northstar Commute Tumbler 20 oz",
+      "category": "Drinkware",
+      "price": 29.00,
+      "currency": "USD",
+      "size_oz": 20,
+      "availability": "in_stock",
+      "specifications": {
+        "material": "18/8 stainless steel body, BPA-free lid",
+        "insulation": "Double-wall vacuum; hot up to 6 hours, cold up to 12 hours",
+        "lid": "Splash-resistant slide lid (NOT leak-proof)",
+        "base_diameter_in": 2.8,
+        "weight_oz": 11,
+        "warranty": "12 months"
+      },
+      "verified_features": [
+        {
+          "feature": "Fits standard car cup holders",
+          "evidence": "Product specification sheet",
+          "approved_for_marketing": true
+        },
+        {
+          "feature": "Hot up to 6 hours",
+          "evidence": "Northstar QA report QA-2025-044 (internal, fictional)",
+          "approved_for_marketing": true
+        }
+      ],
+      "differentiators": [
+        "Slightly more premium finish than SipWorks Metro at a $2 higher price."
+      ],
+      "limitations": [
+        "Slide lid is splash-resistant only; it is NOT leak-proof and must not be marketed as leak-proof.",
+        "No leak-proof lid option is currently available for this product."
+      ],
+      "comparable_competitor_variants": ["SW-METRO-20"]
+    }
+  ]
+}

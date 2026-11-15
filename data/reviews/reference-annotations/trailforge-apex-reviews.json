@@ -1,0 +1,253 @@
+{
+  "_meta": {
+    "notice": "FICTIONAL DATA for the Northstar Supply teaching project (10 Weeks to AI Agents). Not real companies, products, prices, or reviews.",
+    "dataset_id": "trailforge-apex-reviews",
+    "purpose": "Hand-labeled reference annotations written by the course author. Used for offline demos and to score the LLM review annotator in evaluations. Not model output.",
+    "aspect_vocabulary": [
+      "insulation",
+      "lid_leak_resistance",
+      "lid_usability",
+      "durability",
+      "design",
+      "value",
+      "weight",
+      "size_fit",
+      "cleaning",
+      "shipping",
+      "customer_service",
+      "general"
+    ]
+  },
+  "annotations": [
+    {
+      "review_id": "TF-R01",
+      "aspects": [
+        {
+          "aspect": "durability",
+          "sentiment": "positive",
+          "evidence_quote": "Survived a 20-foot fall on granite"
+        },
+        {
+          "aspect": "insulation",
+          "sentiment": "positive",
+          "evidence_quote": "Cold for two full days"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "TF-R02",
+      "aspects": [
+        {
+          "aspect": "general",
+          "sentiment": "positive",
+          "evidence_quote": "Incredible bottle"
+        },
+        {
+          "aspect": "weight",
+          "sentiment": "negative",
+          "evidence_quote": "it weighs a ton when full"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "TF-R03",
+      "aspects": [
+        {
+          "aspect": "value",
+          "sentiment": "neutral",
+          "evidence_quote": "Pricey, but you get what you pay for"
+        }
+      ],
+      "ambiguous": true,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "TF-R04",
+      "aspects": [
+        {
+          "aspect": "value",
+          "sentiment": "positive",
+          "evidence_quote": "Worth every penny"
+        },
+        {
+          "aspect": "durability",
+          "sentiment": "negative",
+          "evidence_quote": "the lid strap snapped after a month"
+        },
+        {
+          "aspect": "customer_service",
+          "sentiment": "positive",
+          "evidence_quote": "Warranty replaced it in a week"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "TF-R05",
+      "aspects": [
+        {
+          "aspect": "value",
+          "sentiment": "negative",
+          "evidence_quote": "$54 for a water bottle is ridiculous"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "TF-R06",
+      "aspects": [
+        {
+          "aspect": "insulation",
+          "sentiment": "positive",
+          "evidence_quote": "Ice lasted 48 hours"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "TF-R07",
+      "aspects": [
+        {
+          "aspect": "size_fit",
+          "sentiment": "negative",
+          "evidence_quote": "Too tall for my car cup holder and my bike cage"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "TF-R08",
+      "aspects": [
+        {
+          "aspect": "design",
+          "sentiment": "positive",
+          "evidence_quote": "Gorgeous finish. Feels premium"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "TF-R09",
+      "aspects": [
+        {
+          "aspect": "shipping",
+          "sentiment": "negative",
+          "evidence_quote": "Shipping took 12 days"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "TF-R10",
+      "aspects": [
+        {
+          "aspect": "size_fit",
+          "sentiment": "negative",
+          "evidence_quote": "Kind of big for a desk"
+        },
+        {
+          "aspect": "insulation",
+          "sentiment": "positive",
+          "evidence_quote": "it keeps water cold"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "TF-R11",
+      "aspects": [
+        {
+          "aspect": "lid_leak_resistance",
+          "sentiment": "positive",
+          "evidence_quote": "No leaks, even upside down in my pack"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "TF-R12",
+      "aspects": [
+        {
+          "aspect": "general",
+          "sentiment": "neutral",
+          "evidence_quote": "Not what I expected"
+        }
+      ],
+      "ambiguous": true,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "TF-R13",
+      "aspects": [
+        {
+          "aspect": "shipping",
+          "sentiment": "negative",
+          "evidence_quote": "Dented on arrival"
+        },
+        {
+          "aspect": "customer_service",
+          "sentiment": "negative",
+          "evidence_quote": "support wanted photos from three angles"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "TF-R14",
+      "aspects": [
+        {
+          "aspect": "weight",
+          "sentiment": "negative",
+          "evidence_quote": "Heavy"
+        },
+        {
+          "aspect": "durability",
+          "sentiment": "positive",
+          "evidence_quote": "it's a tank"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "TF-R15",
+      "aspects": [
+        {
+          "aspect": "general",
+          "sentiment": "positive",
+          "evidence_quote": "Best expedition bottle on the market"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    }
+  ]
+}

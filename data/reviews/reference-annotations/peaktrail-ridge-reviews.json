@@ -1,0 +1,371 @@
+{
+  "_meta": {
+    "notice": "FICTIONAL DATA for the Northstar Supply teaching project (10 Weeks to AI Agents). Not real companies, products, prices, or reviews.",
+    "dataset_id": "peaktrail-ridge-reviews",
+    "purpose": "Hand-labeled reference annotations written by the course author. Used for offline demos and to score the LLM review annotator in evaluations. Not model output.",
+    "aspect_vocabulary": [
+      "insulation",
+      "lid_leak_resistance",
+      "lid_usability",
+      "durability",
+      "design",
+      "value",
+      "weight",
+      "size_fit",
+      "cleaning",
+      "shipping",
+      "customer_service",
+      "general"
+    ]
+  },
+  "annotations": [
+    {
+      "review_id": "PT-R01",
+      "aspects": [
+        {
+          "aspect": "insulation",
+          "sentiment": "positive",
+          "evidence_quote": "Keeps water ice cold all day"
+        },
+        {
+          "aspect": "lid_leak_resistance",
+          "sentiment": "negative",
+          "evidence_quote": "the lid leaks whenever the bottle is on its side"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "PT-R02",
+      "aspects": [
+        {
+          "aspect": "insulation",
+          "sentiment": "positive",
+          "evidence_quote": "Cold water after a full day in the sun"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "PT-R03",
+      "aspects": [
+        {
+          "aspect": "value",
+          "sentiment": "positive",
+          "evidence_quote": "good value for a 32 oz"
+        },
+        {
+          "aspect": "weight",
+          "sentiment": "negative",
+          "evidence_quote": "A bit heavy when full"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "PT-R04",
+      "aspects": [
+        {
+          "aspect": "lid_leak_resistance",
+          "sentiment": "negative",
+          "evidence_quote": "Lid leaked all over my car seat"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "PT-R05",
+      "aspects": [
+        {
+          "aspect": "design",
+          "sentiment": "positive",
+          "evidence_quote": "The color is gorgeous"
+        },
+        {
+          "aspect": "durability",
+          "sentiment": "positive",
+          "evidence_quote": "the powder coat hasn't chipped"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "PT-R06",
+      "aspects": [
+        {
+          "aspect": "insulation",
+          "sentiment": "positive",
+          "evidence_quote": "Great insulation"
+        },
+        {
+          "aspect": "design",
+          "sentiment": "positive",
+          "evidence_quote": "nice matte finish"
+        },
+        {
+          "aspect": "lid_leak_resistance",
+          "sentiment": "negative",
+          "evidence_quote": "The TrailCap drips around the threads"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "PT-R07",
+      "aspects": [
+        {
+          "aspect": "shipping",
+          "sentiment": "negative",
+          "evidence_quote": "Shipping took nine days and the box was crushed"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "PT-R08",
+      "aspects": [
+        {
+          "aspect": "insulation",
+          "sentiment": "positive",
+          "evidence_quote": "Ice still rattling after 24 hours in a hot car"
+        },
+        {
+          "aspect": "lid_leak_resistance",
+          "sentiment": "negative",
+          "evidence_quote": "the lid dribbled a little when it tipped over"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "PT-R09",
+      "aspects": [
+        {
+          "aspect": "lid_usability",
+          "sentiment": "negative",
+          "evidence_quote": "It needs a lot of turns to close"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "PT-R10",
+      "aspects": [
+        {
+          "aspect": "general",
+          "sentiment": "neutral",
+          "evidence_quote": "Does what a water bottle does"
+        }
+      ],
+      "ambiguous": true,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "PT-R11",
+      "aspects": [
+        {
+          "aspect": "lid_leak_resistance",
+          "sentiment": "negative",
+          "evidence_quote": "developed a leak at the lid gasket"
+        },
+        {
+          "aspect": "durability",
+          "sentiment": "negative",
+          "evidence_quote": "within a month"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "PT-R12",
+      "aspects": [
+        {
+          "aspect": "insulation",
+          "sentiment": "positive",
+          "evidence_quote": "Keeps my smoothies cold through my whole shift"
+        },
+        {
+          "aspect": "cleaning",
+          "sentiment": "positive",
+          "evidence_quote": "Easy to clean wide mouth"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "PT-R13",
+      "aspects": [
+        {
+          "aspect": "value",
+          "sentiment": "positive",
+          "evidence_quote": "Love the price"
+        },
+        {
+          "aspect": "insulation",
+          "sentiment": "positive",
+          "evidence_quote": "keeps things cold"
+        },
+        {
+          "aspect": "lid_leak_resistance",
+          "sentiment": "negative",
+          "evidence_quote": "Lid seeps a bit when the bottle is upside down"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "PT-R14",
+      "aspects": [
+        {
+          "aspect": "customer_service",
+          "sentiment": "negative",
+          "evidence_quote": "Customer support never answered my email"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "PT-R15",
+      "aspects": [
+        {
+          "aspect": "size_fit",
+          "sentiment": "negative",
+          "evidence_quote": "Doesn't fit my car's cup holder"
+        },
+        {
+          "aspect": "general",
+          "sentiment": "positive",
+          "evidence_quote": "Otherwise great"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "PT-R16",
+      "aspects": [
+        {
+          "aspect": "insulation",
+          "sentiment": "neutral",
+          "evidence_quote": "Insulation is fine"
+        },
+        {
+          "aspect": "lid_leak_resistance",
+          "sentiment": "negative",
+          "evidence_quote": "the lid leaks from the seal"
+        },
+        {
+          "aspect": "customer_service",
+          "sentiment": "positive",
+          "evidence_quote": "sent a replacement lid quickly"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "PT-R17",
+      "aspects": [
+        {
+          "aspect": "value",
+          "sentiment": "positive",
+          "evidence_quote": "Great deal at the new price"
+        },
+        {
+          "aspect": "insulation",
+          "sentiment": "positive",
+          "evidence_quote": "Cold all day"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "PT-R18",
+      "aspects": [
+        {
+          "aspect": "insulation",
+          "sentiment": "negative",
+          "evidence_quote": "beads of water on it this morning"
+        }
+      ],
+      "ambiguous": true,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "PT-R19",
+      "aspects": [
+        {
+          "aspect": "lid_leak_resistance",
+          "sentiment": "negative",
+          "evidence_quote": "Leaked coffee through the lid"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "PT-R20",
+      "aspects": [
+        {
+          "aspect": "design",
+          "sentiment": "positive",
+          "evidence_quote": "The carry handle is comfortable"
+        },
+        {
+          "aspect": "design",
+          "sentiment": "negative",
+          "evidence_quote": "Wish it came in more colors"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": null
+    },
+    {
+      "review_id": "PT-R21",
+      "aspects": [
+        {
+          "aspect": "lid_leak_resistance",
+          "sentiment": "negative",
+          "evidence_quote": "Lid leaked all over my car seat"
+        }
+      ],
+      "ambiguous": false,
+      "possible_prompt_injection": false,
+      "notes": "Duplicate of PT-R04"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "fictional": true,
+  "snapshot_id": "tf-canteen-2026-10-01",
+  "source_id": "src-tf-canteen-2026-10-01",
+  "competitor_id": "trailforge",
+  "product_id": "TF-CANTEEN",
+  "product_name": "TrailForge Canteen Bottle",
+  "variant_id": "TF-CANTEEN-32",
+  "variant_label": "32 oz",
+  "size_oz": 32,
+  "storefront": "US",
+  "observed_at": "2026-10-01T15:40:00Z",
+  "current_price": 45.0,
+  "list_price": null,
+  "currency": "USD",
+  "promotion": null,
+  "availability": "in_stock",
+  "features": [
+    "Double-wall vacuum insulation",
+    "Keeps drinks cold for 36 hours",
+    "Leak-proof canteen cap",
+    "Lifetime warranty"
+  ],
+  "headline": "The classic, rebuilt.",
+  "marketing_copy": "A heritage canteen shape with modern vacuum insulation.",
+  "hidden_text": null,
+  "source_url": "https://trailforge.example/gear/canteen-bottle",
+  "capture_method": "mock_fixture",
+  "fixture": "data/product-pages/trailforge/tf-canteen-2026-10-01.html",
+  "page_hash": "sha256:f2ebf97b5ec1a67d",
+  "notes": "Baseline observation."
+}

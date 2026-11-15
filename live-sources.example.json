@@ -1,0 +1,13 @@
+{
+  "_readme": "Copy to live-sources.json (git-ignored) and list ONLY public product pages you are permitted to monitor. Set permission_confirmed to true after checking the site's terms of service and robots.txt. product_id and competitor_id must exist in competitors/watchlist.json. See docs/live-integrations.md.",
+  "sources": [
+    {
+      "competitor_id": "peaktrail",
+      "product_id": "PT-RIDGE",
+      "variant_id": "PT-RIDGE-32",
+      "storefront": "US",
+      "url": "https://www.example.com/products/your-permitted-product-page",
+      "permission_confirmed": false
+    }
+  ]
+}

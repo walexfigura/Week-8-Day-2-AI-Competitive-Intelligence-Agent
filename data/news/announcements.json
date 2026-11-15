@@ -1,0 +1,52 @@
+{
+  "_meta": {
+    "notice": "FICTIONAL DATA for the Northstar Supply teaching project (10 Weeks to AI Agents). Not real companies, products, prices, or reviews.",
+    "collected_at": "2026-11-10T16:00:00Z"
+  },
+  "items": [
+    {
+      "news_id": "NEWS-SW-001",
+      "competitor_id": "sipworks",
+      "published_at": "2026-10-20",
+      "source_type": "company_press_release",
+      "reliability": "primary_source",
+      "source_id": "src-news-sw-001",
+      "source_url": "https://sipworks.example/press/lockseal-launch",
+      "title": "SipWorks introduces LockSeal lid for the Metro Commuter Tumbler",
+      "summary": "SipWorks announced that Metro tumblers shipped after October 20 include the new LockSeal lid, which it describes as 'leak-proof in your bag'. The announcement does not mention price changes."
+    },
+    {
+      "news_id": "NEWS-TF-001",
+      "competitor_id": "trailforge",
+      "published_at": "2026-10-28",
+      "source_type": "company_blog",
+      "reliability": "primary_source",
+      "source_id": "src-news-tf-001",
+      "source_url": "https://trailforge.example/stories/everyday-expedition",
+      "title": "TrailForge launches 'Everyday Expedition' campaign",
+      "summary": "TrailForge says its new campaign shows how expedition gear fits daily routines like commuting and office work. No new products or prices are announced."
+    },
+    {
+      "news_id": "NEWS-PT-001",
+      "competitor_id": "peaktrail",
+      "published_at": "2026-10-30",
+      "source_type": "company_blog",
+      "reliability": "primary_source",
+      "source_id": "src-news-pt-001",
+      "source_url": "https://peaktrail.example/blog/ridge-new-colors",
+      "title": "Ridge bottle now available in two new colors",
+      "summary": "PeakTrail added 'Glacier' and 'Ember' colors to the Ridge line. The post does not mention pricing, promotions, or lid changes."
+    },
+    {
+      "news_id": "NEWS-PT-002",
+      "competitor_id": "peaktrail",
+      "published_at": "2026-11-03",
+      "source_type": "anonymous_forum_post",
+      "reliability": "unverified",
+      "source_id": "src-news-pt-002",
+      "source_url": "https://gearforum.example/t/peaktrail-ridge-price",
+      "title": "Forum rumor: 'PeakTrail is dumping Ridge inventory before a redesign'",
+      "summary": "An anonymous forum user claims, without evidence, that PeakTrail cut the Ridge price to clear stock before a redesign. No other source corroborates this claim."
+    }
+  ]
+}

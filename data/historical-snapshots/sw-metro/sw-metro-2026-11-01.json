@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "fictional": true,
+  "snapshot_id": "sw-metro-2026-11-01",
+  "source_id": "src-sw-metro-2026-11-01",
+  "competitor_id": "sipworks",
+  "product_id": "SW-METRO",
+  "product_name": "SipWorks Metro Commuter Tumbler",
+  "variant_id": "SW-METRO-20",
+  "variant_label": "20 oz",
+  "size_oz": 20,
+  "storefront": "US",
+  "observed_at": "2026-11-01T15:10:00Z",
+  "current_price": 27.0,
+  "list_price": null,
+  "currency": "USD",
+  "promotion": null,
+  "availability": "in_stock",
+  "features": [
+    "Fits standard car cup holders",
+    "LockSeal leak-proof lid",
+    "Double-wall insulation",
+    "Keeps coffee hot for 6 hours"
+  ],
+  "headline": "Now leak-proof. Toss it in your bag.",
+  "marketing_copy": "The Metro now ships with our new LockSeal lid, so you can throw it in a backpack or tote without worrying about spills. Same slim fit for any cup holder.",
+  "hidden_text": null,
+  "source_url": "https://sipworks.example/shop/metro-commuter-tumbler",
+  "capture_method": "mock_fixture",
+  "fixture": "data/product-pages/sipworks/sw-metro-2026-11-01.html",
+  "page_hash": "sha256:82ea7b6d7b8a002d",
+  "notes": "Feature list changed: the slider lid was replaced by the LockSeal lid."
+}
