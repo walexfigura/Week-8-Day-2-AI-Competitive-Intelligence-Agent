@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the Claude Skill and build dist/competitive-intelligence-skill.zip.
+"""Validate the Claude Skill and build claude-skill/competitive-intelligence-skill.zip.
 
 Same as `python run.py build-skill`. Logic: src/competitive_intelligence/skill_builder.py
 """

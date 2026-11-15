@@ -265,7 +265,7 @@ def build_parser() -> argparse.ArgumentParser:
     sub.add_parser("smoke", help="Offline smoke test (no API key)").set_defaults(func=cmd_smoke)
 
     k = sub.add_parser("build-skill", help="Validate and zip the Claude Skill")
-    k.add_argument("--output", help="Output folder (default: dist/)")
+    k.add_argument("--output", help="Output folder (default: claude-skill/)")
     k.set_defaults(func=cmd_build_skill)
 
     t = sub.add_parser("tool", help="Call one agent tool directly, offline (or 'list')")

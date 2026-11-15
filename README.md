@@ -149,8 +149,8 @@ means, and what to recommend.** The application enforces the rules that matter m
 ├── evals/                     test-cases.json (12 cases) + run_evals.py
 ├── tests/                     Unit tests (pytest), no API key needed
 ├── reports/                   Generated briefs (examples/ is committed)
-├── claude-skill/              The Claude Skill (SKILL.md, references, sample data, helper script)
-├── scripts/build_skill.py     Builds dist/competitive-intelligence-skill.zip
+├── claude-skill/              The Claude Skill folder + the ready-to-upload competitive-intelligence-skill.zip
+├── scripts/build_skill.py     Rebuilds claude-skill/competitive-intelligence-skill.zip
 └── docs/                      Architecture, live integrations, production, troubleshooting
 ```
 
@@ -311,7 +311,7 @@ rumor claiming PeakTrail is clearing inventory — a trap for agents that invent
 | `python run.py briefing --offline` | No | Same report format, rule-based, no LLM | Brief |
 | `python run.py eval` | Partly | 12 evaluation cases (agent part needs a key) | PASS/FAIL with explanations |
 | `python run.py eval --deterministic-only` | No | Only the deterministic checks | PASS/FAIL |
-| `python run.py build-skill` | No | Validates and zips the Claude Skill | `dist/competitive-intelligence-skill.zip` |
+| `python run.py build-skill` | No | Validates and zips the Claude Skill | `claude-skill/competitive-intelligence-skill.zip` |
 | `python run.py tool list` | No | Lists the agent's tools | List |
 | `python run.py tool compare_product_snapshots --args '{"product_id": "PT-RIDGE", "old_snapshot_id": "pt-ridge-2026-10-01", "new_snapshot_id": "pt-ridge-2026-11-01"}'` | No | Calls one tool yourself and shows exactly what the model would see | JSON |
 
@@ -437,8 +437,10 @@ The `claude-skill/competitive-intelligence/` folder teaches Claude the same work
 competitor research, change detection, aspect-based sentiment, prioritization, and
 briefing — without running any Python.
 
-1. **Build the ZIP:** `python run.py build-skill` → `dist/competitive-intelligence-skill.zip`
-   (validated: frontmatter, linked files, size).
+1. **Get the ZIP:** download
+   [`claude-skill/competitive-intelligence-skill.zip`](https://github.com/walexfigura/Week-8-Day-2-AI-Competitive-Intelligence-Agent/raw/main/claude-skill/competitive-intelligence-skill.zip)
+   directly — no Python needed. If you edit the Skill, rebuild it with `python run.py build-skill`
+   (validates frontmatter, linked files, and size, then overwrites the ZIP).
 2. **Upload it to Claude:** in Claude's settings, open the Skills area and upload the ZIP.
    Custom Skills need a plan with Skills and code execution enabled; if you can't find the
    option, check Anthropic's help center (menu names can change).

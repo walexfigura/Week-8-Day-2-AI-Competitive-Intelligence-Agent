@@ -16,6 +16,7 @@ from pathlib import Path
 SKILL_DIR_NAME = "competitive-intelligence"
 ZIP_NAME = "competitive-intelligence-skill.zip"
 MAX_UNCOMPRESSED = 30 * 1024 * 1024
+FIXED_TIMESTAMP = (2026, 1, 1, 0, 0, 0)  # fixed so rebuilding unchanged files gives an identical ZIP
 
 
 class SkillValidationError(ValueError):
@@ -68,16 +69,26 @@ def validate_skill(skill_dir: Path) -> dict[str, object]:
     return {"name": name, "description_chars": len(desc), "files": len(files), "linked_files": len(links), "bytes": size}
 
 
+def skill_files(skill_dir: Path) -> list[Path]:
+    return sorted(
+        p for p in skill_dir.rglob("*")
+        if p.is_file() and "__pycache__" not in p.parts and p.name != ".DS_Store"
+    )
+
+
 def build_skill_zip(root: Path, output_dir: Path | None = None) -> tuple[Path, dict[str, object]]:
     skill_dir = root / "claude-skill" / SKILL_DIR_NAME
     info = validate_skill(skill_dir)
-    output_dir = output_dir or root / "dist"
+    output_dir = output_dir or root / "claude-skill"
     output_dir.mkdir(parents=True, exist_ok=True)
     zip_path = output_dir / ZIP_NAME
     with zipfile.ZipFile(zip_path, "w", compression=zipfile.ZIP_DEFLATED) as zf:
-        for path in sorted(skill_dir.rglob("*")):
-            if path.is_file() and "__pycache__" not in path.parts and path.name != ".DS_Store":
-                zf.write(path, Path(SKILL_DIR_NAME) / path.relative_to(skill_dir))
+        for path in skill_files(skill_dir):
+            arcname = (Path(SKILL_DIR_NAME) / path.relative_to(skill_dir)).as_posix()
+            entry = zipfile.ZipInfo(arcname, date_time=FIXED_TIMESTAMP)
+            entry.compress_type = zipfile.ZIP_DEFLATED
+            entry.external_attr = 0o644 << 16
+            zf.writestr(entry, path.read_bytes())
     with zipfile.ZipFile(zip_path) as zf:
         names = zf.namelist()
         if f"{SKILL_DIR_NAME}/SKILL.md" not in names:

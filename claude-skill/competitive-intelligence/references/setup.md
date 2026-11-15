@@ -1,8 +1,8 @@
 # Setup
 
 ## Install the Skill
-1. Get `competitive-intelligence-skill.zip` (build it from the repository with
-   `python run.py build-skill`; it is written to `dist/`).
+1. Get `competitive-intelligence-skill.zip`: download it from the repository's
+   `claude-skill/` folder, or rebuild it with `python run.py build-skill`.
 2. In Claude, open the Skills area of your settings and upload the ZIP. Custom Skills
    require a plan with Skills and code execution enabled; menu names can change, so
    check Anthropic's help center if you cannot find the option.

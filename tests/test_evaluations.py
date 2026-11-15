@@ -159,3 +159,11 @@ def test_cli_offline_commands(monkeypatch, tmp_path, capsys):
     assert main(["demo", "--list"]) == 0
     assert main(["demo"]) == 2  # no API key → friendly message, exit code 2
     assert "OPENAI_API_KEY is not set" in capsys.readouterr().out
+
+
+def test_committed_skill_zip_is_up_to_date(tmp_path):
+    """The ZIP in claude-skill/ is published for download; it must match the Skill folder."""
+    committed = ROOT / "claude-skill" / "competitive-intelligence-skill.zip"
+    assert committed.is_file(), "Run `python run.py build-skill` to create the ZIP"
+    fresh, _ = build_skill_zip(ROOT, tmp_path)
+    assert fresh.read_bytes() == committed.read_bytes(), "Skill changed: run `python run.py build-skill` and commit the ZIP"
